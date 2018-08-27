@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form method="POST">
+        @helper.CSRF.formField
+        <label for="place1">Name a place: </label>
+        <input type="text" name="place1" id="place1"><br>
+        <label for="adjective1">An adjective: </label>
+        <input type="text" name="adjective1" id="adjective1"><br>
+        <label for="noun1">A noun: </label>
+        <select name="noun1" id="noun1">
+            <option value="house">House</option>
+            <option value="coffee mug">Coffee Mug</option>
+            <option value="jacket">Jacket</option>
+            <option value="spice rack">Spice Rack</option>
+        </select>
+        <br>
+        <label for="noun2">A noun: </label>
+        <input type="text" name="noun2" id="noun2">
+        <br>
+        <label>A past-tense verb: </label>
+        <input type="radio" name="verb1" id="verb1-1" value="walked"><label for="verb1-1">Walked</label>
+        <input type="radio" name="verb1" id="verb1-2" value="ran"><label for="verb1-2">Ran</label>
+        <input type="radio" name="verb1" id="verb1-3" value="jumped"><label for="verb1-3">Jumped</label>
+        <br>
+        <label for="place2">A place: </label>
+        <select name="place2" id="place2">
+            <option value="jail">Jail</option>
+            <option value="new york city">New York City</option>
+            <option value="the spa">The Spa</option>
+            <option value="school">School</option>
+        </select>
+        <br>
+        <input type="submit" value="Generate Story">
+    </form>
+</body>
+</html>
